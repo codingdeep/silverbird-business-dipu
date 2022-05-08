@@ -1,0 +1,35 @@
+// Header
+.navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $white;
+
+    .logo {
+        width: 120px;
+    }
+
+    .dropdown-user {
+        .avatar {
+            margin-right: 10px;
+        }
+    }
+
+    .navbar-nav {
+        align-items: center;
+
+        .nav-link {
+            padding-left: 15px;
+            padding-right: 15px;
+
+            i {
+                font-size: 22px;
+                color: $light-deep;
+            }
+        }
+    }
+}
+
+.sidebar-toggler {
+    padding-right: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,75 @@
+// Background
+.bg-primary-opacity,
+.bg-success-opacity,
+.bg-info-opacity,
+.bg-warning-opacity,
+.bg-danger-opacity,
+.bg-purple-opacity {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &.rounded {
+        &:after {
+            border-radius: 5px;
+        }
+
+    }
+}
+
+
+.bg-primary-opacity {
+    color: $primary;
+
+    &:after {
+        background-color: rgba($primary, .1);
+    }
+
+}
+
+.bg-success-opacity {
+    color: $success;
+
+    &:after {
+        background-color: rgba($success, .1);
+    }
+}
+
+.bg-info-opacity {
+    color: $info;
+
+    &:after {
+        background-color: rgba($info, .1);
+    }
+}
+
+.bg-warning-opacity {
+    color: $warning;
+
+    &:after {
+        background-color: rgba($warning, .1);
+    }
+}
+
+.bg-danger-opacity {
+    color: $danger;
+
+    &:after {
+        background-color: rgba($danger, .1);
+    }
+}
+
+.bg-purple-opacity {
+    color: $purple;
+
+    &:after {
+        background-color: rgba($purple, .1);
+    }
+}

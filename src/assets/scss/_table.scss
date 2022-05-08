@@ -1,0 +1,63 @@
+.table-default {
+    .light {
+        border-color: transparent;
+        background-color: rgba($light, .5);
+    }
+
+    thead {
+        td {
+            text-transform: uppercase;
+        }
+
+    }
+
+    &.table> :not(:first-child) {
+        border-top: unset
+    }
+
+    tbody {
+        td {
+            border: 0;
+        }
+
+        .status {
+            font-size: 12px;
+            padding: 5px 14px 10px 14px;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                content: '';
+                left: 0;
+                border-radius: 5px;
+            }
+
+            &.success {
+                &:after {
+                    background-color: rgba($success, .2);
+                }
+
+                color: $success;
+            }
+
+            &.primary {
+                &:after {
+                    background-color: rgba($primary, .1);
+                }
+
+                color: $primary;
+
+            }
+
+            &.danger {
+                &:after {
+                    background-color: rgba($danger, .1);
+                }
+
+                color: $danger
+            }
+        }
+    }
+}

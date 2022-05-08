@@ -1,0 +1,26 @@
+// Default Card 
+.card-default {
+    border: unset;
+    border-radius: 8px;
+
+    .card-header {
+        background-color: transparent;
+        border-bottom: unset;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 18px;
+
+        h5 {
+            margin-bottom: 0;
+        }
+    }
+
+    .card-body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

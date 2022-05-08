@@ -1,0 +1,53 @@
+/* ===== Layout  =====*/
+// Content Wrapper
+.content-wrapper {
+    display: flex;
+    // transition: ease-in-out;
+
+    .sidebar {
+        width: 250px;
+        transition: width .5s, padding .5s;
+    }
+
+    main {
+        transition: width .5s, padding .5s;
+        padding-left: 275px;
+        padding-top: 83px;
+        width: calc(100% - 30px);
+    }
+
+    // width: 60px;
+
+    &.minified-sidebar {
+        // transition: width 2s, padding 2s;
+
+        .sidebar {
+            width: 60px;
+
+        }
+
+        main {
+            padding-left: 75px;
+        }
+    }
+
+
+}
+
+
+// Font weight
+.font-weight-medium {
+    font-weight: 500;
+}
+
+.text-sm {
+    font-size: 13px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}

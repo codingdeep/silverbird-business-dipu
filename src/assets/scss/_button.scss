@@ -1,0 +1,13 @@
+// Button White
+.btn {
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border: 1px solid $border-color;
+    color: $dark;
+}
+
+.btn-warning {
+    color: $white;
+}

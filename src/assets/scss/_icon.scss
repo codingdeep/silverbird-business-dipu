@@ -1,0 +1,76 @@
+// Icons 
+.icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        content: '';
+    }
+
+    &.rounded-circle {
+        &:after {
+            border-radius: 50%;
+        }
+    }
+
+    i {
+        font-size: 24px;
+
+    }
+
+
+
+
+    &.bg-primary-opacity {
+        i {
+            color: $primary
+        }
+    }
+
+    &.bg-success-opacity {
+        i {
+            color: $success
+        }
+    }
+
+    &.bg-info-opacity {
+        i {
+            color: $info
+        }
+    }
+
+    &.bg-warning-opacity {
+        i {
+            color: $warning
+        }
+    }
+
+    &.bg-danger-opacity {
+        i {
+            color: $danger
+        }
+    }
+
+    &.bg-purple-opacity {
+        i {
+            color: $purple
+        }
+    }
+
+    &.icon-sm {
+        width: 40px;
+        height: 40px;
+
+        i {
+            font-size: 20px;
+        }
+
+    }
+}
