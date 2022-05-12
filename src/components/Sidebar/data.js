@@ -32,16 +32,23 @@ const data = [
         child: false
     },
     {
-        id: "3",
+        id: "4",
         title: 'Services',
         link: '/services',
         icon: 'mdi mdi-account-multiple-outline',
         child: false
     },
     {
-        id: "3",
+        id: "5",
         title: 'Staff',
         link: '/staff',
+        icon: 'mdi mdi-account-circle',
+        child: false
+    },
+    {
+        id: "6",
+        title: 'Inventory',
+        link: '/inventory',
         icon: 'mdi mdi-account-circle',
         child: false
     },
