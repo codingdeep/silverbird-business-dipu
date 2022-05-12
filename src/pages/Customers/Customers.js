@@ -8,7 +8,9 @@ import user from '../../assets/images/avatar.png';
 export default function Customers() {
     return (
         <>
-            <Filter />
+            <Filter
+                pageTitle="Customar"
+            />
             <div>
                 <div className="row mt-3">
                     {/* Sinlge  Item */}

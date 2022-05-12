@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default function Filter() {
+export default function Filter(props) {
     return (
 
         <div className='bg-white rounded py-3 px-5  shadow-sm'>
@@ -10,7 +10,7 @@ export default function Filter() {
                 <div className="col-xl-9">
                     <div className="row align-items-center">
                         <div className="col-lg-2">
-                            <h5 className='text-uppercase text-dark mb-0'>Customar</h5>
+                            <h5 className='text-uppercase text-dark mb-0'>{props.pageTitle}</h5>
                         </div>
                         <div className="col-lg-4">
                             <input type="text" className="form-control form-control-pill border-0" />
