@@ -9,6 +9,7 @@ import Customers from "./pages/Customers/Customers";
 import Services from "./pages/Services/Services";
 import Staff from "./pages/Staff/Staff";
 import Inventory from "./pages/Inventory/Inventory";
+import Payroll from "./pages/Payroll/Payroll";
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/services" component={Services} />
           <Route exact path="/staff" component={Staff} />
           <Route exact path="/inventory" component={Inventory} />
+          <Route exact path="/payroll" component={Payroll} />
 
         </Switch>
       </Layout>

@@ -52,6 +52,13 @@ const data = [
         icon: 'mdi mdi-account-circle',
         child: false
     },
+    {
+        id: "7",
+        title: 'Payroll',
+        link: '/payroll',
+        icon: 'mdi mdi-account-circle',
+        child: false
+    },
 ];
 
 export default data;
