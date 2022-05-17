@@ -1,0 +1,17 @@
+.modal-header-default {
+    .modal-title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+.modal-dialog {
+    &.modal-lg {
+        @include media-breakpoint-up(lg) {
+            max-width: 940px;
+        }
+    }
+}

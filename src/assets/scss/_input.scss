@@ -2,3 +2,71 @@
 .form-control-pill {
     border-radius: 25px;
 }
+
+.input-wrapper {
+    // border: 1px solid $border-color;
+    // border-radius: 5px;
+    // padding: 15px 20px;
+    position: relative;
+
+    label {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        position: absolute;
+        top: 15px;
+        transition: top .25s ease-in-out;
+        left: 15px;
+
+        &.active {
+            top: 2px;
+            // transition: position 2s ease-in-out;
+        }
+    }
+
+    .form-control {
+        // padding-left: 15px;
+        // padding-right: 15px;
+        height: 62px;
+        padding: 15px;
+        background-color: transparent;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    // .form-control {
+    //     // // padding: 0;
+    //     // background-color: transparent;
+    //     // border-color: transparent;
+
+    //     &:focus {
+    //         // box-shadow: none;
+    //         // border-color: transparent;
+    //     }
+    // }
+
+
+}
+
+.input-wrapper-datepicker {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    padding: 6px 13px;
+
+    label {
+        margin-bottom: 0;
+    }
+
+    .form-control {
+        background-color: transparent;
+        padding: 0;
+        border-color: transparent;
+
+        &:focus {
+            box-shadow: none;
+            border-color: transparent;
+        }
+
+    }
+}

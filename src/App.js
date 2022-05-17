@@ -10,6 +10,7 @@ import Services from "./pages/Services/Services";
 import Staff from "./pages/Staff/Staff";
 import Inventory from "./pages/Inventory/Inventory";
 import Payroll from "./pages/Payroll/Payroll";
+import CloseOut from "./pages/CloseOut/CloseOut";
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/staff" component={Staff} />
           <Route exact path="/inventory" component={Inventory} />
           <Route exact path="/payroll" component={Payroll} />
+          <Route exact path="/close-out" component={CloseOut} />
 
         </Switch>
       </Layout>

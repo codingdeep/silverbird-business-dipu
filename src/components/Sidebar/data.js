@@ -59,6 +59,13 @@ const data = [
         icon: 'mdi mdi-account-circle',
         child: false
     },
+    {
+        id: "8",
+        title: 'Close Out',
+        link: '/close-out',
+        icon: 'mdi mdi-account-circle',
+        child: false
+    },
 ];
 
 export default data;

@@ -1,14 +1,17 @@
 // Breakpoints
-$grid-breakpoints: (xs: 0,
+$grid-breakpoints: (
+        xs: 0,
         sm: 576px,
         md: 768px,
         lg: 992px,
         xl: 1200px,
-        xxl: 1500px);
+        xxl: 1500px
+);
 
 // Spacer
 $spacer: 1rem !default;
-$spacers: ((0: 0,
+$spacers: (
+        (0: 0,
                 1: ($spacer * .3125),
                 2: ($spacer * .625),
                 3: $spacer * .9375,
@@ -16,7 +19,8 @@ $spacers: ((0: 0,
                 5: ($spacer * 1.5625),
                 6: ($spacer * 1.875),
                 7: ($spacer * 3.125),
-                8: ($spacer * 4.0625)));
+                8: ($spacer * 4.0625))
+);
 
 // Color system
 
@@ -35,17 +39,18 @@ $info: #50ACBB !default;
 $warning: #E79A37 !default;
 $danger: #DE0B5A !default;
 $white: #ffffff !default;
-$dark: $gray-700 !default;
-$border-color: #E3E3E3 !default;
-$secondary: $gray-200 !default;
-$light: $gray-100 !default;
-$light-deep: $gray-200 !default;
-$text-color: $gray-200 !default;
+$dark: $gray-700  !default;
+$border-color: #ced4da !default;
+$secondary: $gray-200  !default;
+$light: $gray-100  !default;
+$light-deep: $gray-200  !default;
+$text-color: $gray-200  !default;
 $warning2: #FEC400 !default;
 $bg-purple: #B558F6;
 
 
-$theme-colors: (("primary": $primary,
+$theme-colors: (
+        ("primary": $primary,
                 "secondary": $secondary,
                 "success": $success,
                 "info": $info,
@@ -53,26 +58,27 @@ $theme-colors: (("primary": $primary,
                 "danger": $danger,
                 "light": $light,
                 "dark": $dark,
-                "purple": $bg-purple));
+                "purple": $bg-purple)
+);
 
 
 //Body
-$body-bg: $light !default;
-$body-color: $gray-200 !default;
+$body-bg: $light  !default;
+$body-color: $gray-200  !default;
 
 // font-family: 'Roboto', sans-serif;
 // font-family:;
 
 // Fonts
 $font-family-roboto: 'Roboto',
-sans-serif !default;
+        sans-serif !default;
 $font-family-barlow: 'Barlow',
-sans-serif !default;
+        sans-serif !default;
 $font-family-matetial-icon: 'Material Design Icons' !default;
 
-$font-family-base: $font-family-barlow !default;
-$font-family-secondary: $font-family-roboto !default;
-$font-family-icon: $font-family-matetial-icon !default;
+$font-family-base: $font-family-barlow  !default;
+$font-family-secondary: $font-family-roboto  !default;
+$font-family-icon: $font-family-matetial-icon  !default;
 
 $input-btn-padding-y: 0.6rem;
 $input-btn-padding-x: 1.5rem;

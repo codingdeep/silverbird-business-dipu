@@ -5,11 +5,11 @@ import Filter from '../../components/Filter/Filter';
 export default function Payroll() {
     const [serviceList, setServiceList] = React.useState([
         { batchNo: 1020, startDate: "01/17/2020", endDate: "01/31/2020", gross: 250.00, grossAjd: 5.00, payout: 250.00, payoutAdj: 5.00 },
-        { batchNo: 1020, startDate: "01/17/2020", endDate: "01/31/2020", gross: 250.00, grossAjd: 5.00, payout: 250.00, payoutAdj: 5.00 },
-        { batchNo: 1020, startDate: "01/17/2020", endDate: "01/31/2020", gross: 250.00, grossAjd: 5.00, payout: 250.00, payoutAdj: 5.00 },
-        { batchNo: 1020, startDate: "01/17/2020", endDate: "01/31/2020", gross: 250.00, grossAjd: 5.00, payout: 250.00, payoutAdj: 5.00 },
-        { batchNo: 1020, startDate: "01/17/2020", endDate: "01/31/2020", gross: 250.00, grossAjd: 5.00, payout: 250.00, payoutAdj: 5.00 },
-        { batchNo: 1020, startDate: "01/17/2020", endDate: "01/31/2020", gross: 250.00, grossAjd: 5.00, payout: 250.00, payoutAdj: 5.00 },
+        { batchNo: 1021, startDate: "01/17/2020", endDate: "01/31/2020", gross: 250.00, grossAjd: 5.00, payout: 250.00, payoutAdj: 5.00 },
+        { batchNo: 1022, startDate: "01/17/2020", endDate: "01/31/2020", gross: 250.00, grossAjd: 5.00, payout: 250.00, payoutAdj: 5.00 },
+        { batchNo: 1023, startDate: "01/17/2020", endDate: "01/31/2020", gross: 250.00, grossAjd: 5.00, payout: 250.00, payoutAdj: 5.00 },
+        { batchNo: 1024, startDate: "01/17/2020", endDate: "01/31/2020", gross: 250.00, grossAjd: 5.00, payout: 250.00, payoutAdj: 5.00 },
+        { batchNo: 1025, startDate: "01/17/2020", endDate: "01/31/2020", gross: 250.00, grossAjd: 5.00, payout: 250.00, payoutAdj: 5.00 },
     ])
     return (
         <>
