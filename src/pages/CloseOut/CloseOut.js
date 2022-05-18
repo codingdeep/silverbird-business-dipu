@@ -28,9 +28,6 @@ export default function Payroll() {
     const handleOnChange = (e) => {
         // console.log(e);
         const { name, value } = e.target;
-
-        console.log(name);
-        console.log(value);
         setFields({
             ...fields,
             [name]: value

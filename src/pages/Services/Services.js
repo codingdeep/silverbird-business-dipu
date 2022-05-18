@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Modal, ModalHeader, ModalBody } from "reactstrap";
+
 import Filter from '../../components/Filter/Filter';
 import Avatar from '../../components/Avatar';
-
-
 import user from '../../assets/images/avatar.png';
 
 export default function Services() {
+
+    const [modal, setModal] = useState(false);
+    const modalToggle = () => {
+        setModal(!modal)
+    }
+
     return (
         <>
             <Filter
@@ -19,7 +25,7 @@ export default function Services() {
                             <div className="card-body">
                                 <div className="d-flex mb-2">
                                     <div className="flex-shrink-0 me-2">
-                                        <Avatar src={user} circle={true} className="" />
+                                        <Avatar src={user} />
                                     </div>
                                     <div className="flex-grow-1">
                                         <div className="d-flex justify-content-between flex-nowrap">
@@ -47,16 +53,16 @@ export default function Services() {
                                         </li>
                                     </ul>
                                     <div className="mt-3 d-flex flex-wrap">
-                                        <Avatar src={user} circle={true} className="avatar-xs ms-1" />
-                                        <Avatar src={user} circle={true} className="avatar-xs ms-1" />
-                                        <Avatar src={user} circle={true} className="avatar-xs ms-1" />
-                                        <Avatar src={user} circle={true} className="avatar-xs ms-1" />
-                                        <Avatar src={user} circle={true} className="avatar-xs ms-1" />
-                                        <Avatar src={user} circle={true} className="avatar-xs ms-1" />
-                                        <Avatar src={user} circle={true} className="avatar-xs ms-1" />
-                                        <Avatar src={user} circle={true} className="avatar-xs ms-1" />
-                                        <Avatar src={user} circle={true} className="avatar-xs ms-1" />
-                                        <Avatar src={user} circle={true} className="avatar-xs ms-1" />
+                                        <Avatar src={user} className="avatar-xs ms-1" />
+                                        <Avatar src={user} className="avatar-xs ms-1" />
+                                        <Avatar src={user} className="avatar-xs ms-1" />
+                                        <Avatar src={user} className="avatar-xs ms-1" />
+                                        <Avatar src={user} className="avatar-xs ms-1" />
+                                        <Avatar src={user} className="avatar-xs ms-1" />
+                                        <Avatar src={user} className="avatar-xs ms-1" />
+                                        <Avatar src={user} className="avatar-xs ms-1" />
+                                        <Avatar src={user} className="avatar-xs ms-1" />
+                                        <Avatar src={user} className="avatar-xs ms-1" />
 
                                     </div>
 
@@ -627,14 +633,33 @@ export default function Services() {
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
 
                 </div>
+
+                <Modal
+                    isOpen={modal}
+                    size="lg"
+                >
+                    <ModalHeader toggle={modalToggle} tag="div" className='modal-header-default'>
+                        <h6 className='text-uppercase'>nEW cLOSE oUT</h6>
+                        <div className='d-flex align-items-center justify-content-end'>
+                            <button className='btn btn-secondary btn-sm me-3'>FINALIZE</button>
+                            <button className='btn btn-warning btn-sm me-3'>UNRESOLVE</button>
+                            <button className='btn btn-primary btn-sm me-3'>Save</button>
+                            <button className='btn mdi mdi-delete-outline btn-sm' style={{ fontSize: '20px' }}></button>
+                        </div>
+
+                    </ModalHeader>
+                    <ModalBody>
+                        <div className="row">
+
+                        </div>
+                    </ModalBody>
+
+                </Modal>
+
+
+
             </div>
         </>
     )
