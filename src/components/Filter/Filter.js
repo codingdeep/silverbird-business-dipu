@@ -33,7 +33,7 @@ export default function Filter(props) {
                 <div className="col-xl-3">
                     <div className="d-flex justify-content-end">
                         <button className='btn btn-white btn-sm ms-2'>Clear Filter</button>
-                        <button className='btn btn-white btn-sm ms-2'>
+                        <button className='btn btn-white btn-sm ms-2' onClick={props.handleAddNew}>
                             <i className="mdi mdi-account-plus-outline me-2"></i>
                             Add New
                         </button>

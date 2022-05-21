@@ -6,10 +6,17 @@ import Avatar from '../../components/Avatar';
 import user from '../../assets/images/avatar.png';
 
 export default function Staff() {
+
+    const handleAddNew = () => {
+        console.log("fadfadf");
+    }
+
+
     return (
         <>
             <Filter
                 pageTitle="Staff"
+                handleAddNew={handleAddNew}
             />
             <div>
                 <div className="row mt-3">

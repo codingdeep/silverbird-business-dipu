@@ -26,12 +26,12 @@ export default function Payroll() {
     }
 
     const handleOnChange = (e) => {
-        // console.log(e);
+
         const { name, value } = e.target;
         setFields({
             ...fields,
             [name]: value
-        })
+        });
 
     }
 
