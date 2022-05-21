@@ -174,6 +174,7 @@ export default function Payroll() {
                                 </div>
 
                                 <FlotingInput
+                                    type="number"
                                     label="Chase Met"
                                     onChange={handleOnChange}
                                     id="chesMet"
@@ -183,6 +184,7 @@ export default function Payroll() {
                                 />
 
                                 <FlotingInput
+                                    type="number"
                                     label="Cash Left"
                                     onChange={handleOnChange}
                                     id="chesLeft"
@@ -193,6 +195,7 @@ export default function Payroll() {
                             </div>
                             <div className="col-xl-4">
                                 <FlotingInput
+                                    type="number"
                                     label="Services"
                                     onChange={handleOnChange}
                                     id="services"
@@ -200,6 +203,7 @@ export default function Payroll() {
                                     name="services"
                                 />
                                 <FlotingInput
+                                    type="number"
                                     label="Products"
                                     onChange={handleOnChange}
                                     id="products"
@@ -207,6 +211,7 @@ export default function Payroll() {
                                     name="products"
                                 />
                                 <FlotingInput
+                                    type="number"
                                     label="Tip"
                                     onChange={handleOnChange}
                                     id="tip"
@@ -215,6 +220,7 @@ export default function Payroll() {
                                 />
 
                                 <FlotingInput
+                                    type="number"
                                     label="Total"
                                     onChange={handleOnChange}
                                     id="total"
@@ -225,6 +231,7 @@ export default function Payroll() {
                             </div>
                             <div className="col-xl-4">
                                 <FlotingInput
+                                    type="number"
                                     label="Cash"
                                     onChange={handleOnChange}
                                     id="cash"
@@ -233,6 +240,7 @@ export default function Payroll() {
                                 />
 
                                 <FlotingInput
+                                    type="number"
                                     label="check"
                                     onChange={handleOnChange}
                                     id="check"
@@ -241,6 +249,7 @@ export default function Payroll() {
                                 />
 
                                 <FlotingInput
+                                    type="number"
                                     label="Gift card"
                                     onChange={handleOnChange}
                                     id="gift-card"
@@ -249,6 +258,7 @@ export default function Payroll() {
                                 />
 
                                 <FlotingInput
+                                    type="number"
                                     label="reward"
                                     onChange={handleOnChange}
                                     id="reward"

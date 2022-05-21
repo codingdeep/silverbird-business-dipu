@@ -21,7 +21,8 @@ const FlotingInput = (props) => {
         <div className={classname("input-wrapper mb-3", { [props.parentClass]: props.parentClass })}>
             {/* <div className={parentClass}> */}
             <label for={props.id} className={classname("form-label", { active: value || props.value })}>{props.label}</label>
-            <input type="number"
+            <input
+                type={props.type}
                 class="form-control"
                 id={props.id}
                 onChange={props.onChange}
