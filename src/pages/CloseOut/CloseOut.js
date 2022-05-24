@@ -6,6 +6,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 import closeOutData from './data';
 import FlotingInput from '../../components/FlotingInput';
+import InputDate from '../../components/FlotingInput/InputDate';
 
 export default function Payroll() {
 
@@ -152,26 +153,25 @@ export default function Payroll() {
                     <ModalBody>
                         <div className="row">
                             <div className="col-xl-4">
-                                <div className="input-wrapper-datepicker mb-3">
-                                    <label for="start-time" class="form-label">Start Time</label>
-                                    <DatePicker
-                                        selected={startDate}
-                                        onChange={(date) => setStartDate(date)}
-                                        showTimeSelect
-                                        dateFormat="MMMM d, yyyy h:mm aa"
-                                        className="form-control"
-                                    />
-                                </div>
-                                <div className="input-wrapper-datepicker mb-3">
-                                    <label for="start-time" class="form-label">End Time</label>
-                                    <DatePicker
-                                        selected={startDate}
-                                        onChange={(date) => setStartDate(date)}
-                                        showTimeSelect
-                                        dateFormat="MMMM d, yyyy h:mm aa"
-                                        className="form-control"
-                                    />
-                                </div>
+                                <InputDate
+                                    label="Start Time"
+                                    selected={startDate}
+                                    onChange={(date) => setStartDate(date)}
+                                    showTimeSelect={true}
+                                    dateFormat="MMMM d, yyyy h:mm aa"
+                                    className="form-control"
+
+                                />
+
+                                <InputDate
+                                    label="End Time"
+                                    selected={startDate}
+                                    onChange={(date) => setStartDate(date)}
+                                    showTimeSelect={true}
+                                    dateFormat="MMMM d, yyyy h:mm aa"
+                                    className="form-control"
+
+                                />
 
                                 <FlotingInput
                                     type="number"

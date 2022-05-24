@@ -1,5 +1,8 @@
 // From
 .form-switch {
+    display: flex;
+    align-items: center;
+
     .form-check-input {
         width: 3em;
         height: 1.5em;

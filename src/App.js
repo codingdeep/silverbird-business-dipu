@@ -11,6 +11,7 @@ import Staff from "./pages/Staff/Staff";
 import Inventory from "./pages/Inventory/Inventory";
 import Payroll from "./pages/Payroll/Payroll";
 import CloseOut from "./pages/CloseOut/CloseOut";
+import AddNewStaff from "./pages/Staff/AddNewStaff";
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/customers" component={Customers} />
           <Route exact path="/services" component={Services} />
           <Route exact path="/staff" component={Staff} />
+          <Route exact path="/add-new-staff" component={AddNewStaff} />
           <Route exact path="/inventory" component={Inventory} />
           <Route exact path="/payroll" component={Payroll} />
           <Route exact path="/close-out" component={CloseOut} />

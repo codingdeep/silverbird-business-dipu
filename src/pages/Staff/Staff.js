@@ -5,10 +5,10 @@ import Avatar from '../../components/Avatar';
 
 import user from '../../assets/images/avatar.png';
 
-export default function Staff() {
+export default function Staff(props) {
 
     const handleAddNew = () => {
-        console.log("fadfadf");
+        props.history.push('/add-new-staff')
     }
 
 
