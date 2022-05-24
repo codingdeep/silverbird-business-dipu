@@ -13,21 +13,22 @@
         margin-bottom: 0;
         text-transform: uppercase;
         position: absolute;
-        top: 15px;
+        top: 13px;
         transition: top .25s ease-in-out;
         left: 15px;
+        font-size: 13px;
 
         &.active {
-            top: 2px;
+            top: 3px;
             // transition: position 2s ease-in-out;
         }
     }
 
     .form-control {
-        // padding-left: 15px;
-        // padding-right: 15px;
-        height: 62px;
-        padding: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        padding-top: 15px;
         background-color: transparent;
 
         &:focus {
@@ -75,4 +76,14 @@
     &.width-150 {
         width: 150px;
     }
+}
+
+// Input Drage and Drop 
+.input-drage-drop {
+    border: 1px solid $border-color  !important;
+}
+
+.form-switch-custom {
+    padding-left: 0;
+    justify-content: space-between;
 }

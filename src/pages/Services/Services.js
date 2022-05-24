@@ -1,21 +1,47 @@
 import React, { useState } from 'react';
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
+import { FileUploader } from "react-drag-drop-files";
 
 import Filter from '../../components/Filter/Filter';
 import Avatar from '../../components/Avatar';
 import user from '../../assets/images/avatar.png';
+import FlotingInput from '../../components/FlotingInput';
+
 
 export default function Services() {
+
+    const [fields, setFields] = useState({
+        chesMet: "",
+        chesLeft: "",
+    })
+
+    const handleOnChange = (e) => {
+
+        const { name, value } = e.target;
+        setFields({
+            ...fields,
+            [name]: value
+        });
+
+    }
+
 
     const [modal, setModal] = useState(false);
     const modalToggle = () => {
         setModal(!modal)
     }
 
+    // Change Image
+    const handleOnChangeResume = (e) => {
+
+
+    }
+
     return (
         <>
             <Filter
                 pageTitle="Services"
+                handleAddNew={modalToggle}
             />
             <div>
                 <div className="row mt-3">
@@ -34,7 +60,7 @@ export default function Services() {
                                                 <span>30 min</span>
                                             </div>
                                             <div>
-                                                <i className="mdi mdi-pencil font-size-20"></i>
+                                                <button className='btn btn-sm mdi mdi-pencil font-size-20' onClick={modalToggle}></button>
                                             </div>
                                         </div>
 
@@ -86,7 +112,7 @@ export default function Services() {
                                                 <span>30 min</span>
                                             </div>
                                             <div>
-                                                <i className="mdi mdi-pencil font-size-20"></i>
+                                                <button className='btn btn-sm mdi mdi-pencil font-size-20' onClick={modalToggle}></button>
                                             </div>
                                         </div>
 
@@ -137,7 +163,7 @@ export default function Services() {
                                                 <span>30 min</span>
                                             </div>
                                             <div>
-                                                <i className="mdi mdi-pencil font-size-20"></i>
+                                                <button className='btn btn-sm mdi mdi-pencil font-size-20' onClick={modalToggle}></button>
                                             </div>
                                         </div>
 
@@ -188,7 +214,7 @@ export default function Services() {
                                                 <span>30 min</span>
                                             </div>
                                             <div>
-                                                <i className="mdi mdi-pencil font-size-20"></i>
+                                                <button className='btn btn-sm mdi mdi-pencil font-size-20' onClick={modalToggle}></button>
                                             </div>
                                         </div>
 
@@ -239,7 +265,7 @@ export default function Services() {
                                                 <span>30 min</span>
                                             </div>
                                             <div>
-                                                <i className="mdi mdi-pencil font-size-20"></i>
+                                                <button className='btn btn-sm mdi mdi-pencil font-size-20' onClick={modalToggle}></button>
                                             </div>
                                         </div>
 
@@ -290,7 +316,7 @@ export default function Services() {
                                                 <span>30 min</span>
                                             </div>
                                             <div>
-                                                <i className="mdi mdi-pencil font-size-20"></i>
+                                                <button className='btn btn-sm mdi mdi-pencil font-size-20' onClick={modalToggle}></button>
                                             </div>
                                         </div>
 
@@ -341,7 +367,7 @@ export default function Services() {
                                                 <span>30 min</span>
                                             </div>
                                             <div>
-                                                <i className="mdi mdi-pencil font-size-20"></i>
+                                                <button className='btn btn-sm mdi mdi-pencil font-size-20' onClick={modalToggle}></button>
                                             </div>
                                         </div>
 
@@ -393,7 +419,7 @@ export default function Services() {
                                                 <span>30 min</span>
                                             </div>
                                             <div>
-                                                <i className="mdi mdi-pencil font-size-20"></i>
+                                                <button className='btn btn-sm mdi mdi-pencil font-size-20' onClick={modalToggle}></button>
                                             </div>
                                         </div>
 
@@ -444,7 +470,7 @@ export default function Services() {
                                                 <span>30 min</span>
                                             </div>
                                             <div>
-                                                <i className="mdi mdi-pencil font-size-20"></i>
+                                                <button className='btn btn-sm mdi mdi-pencil font-size-20' onClick={modalToggle}></button>
                                             </div>
                                         </div>
 
@@ -495,7 +521,7 @@ export default function Services() {
                                                 <span>30 min</span>
                                             </div>
                                             <div>
-                                                <i className="mdi mdi-pencil font-size-20"></i>
+                                                <button className='btn btn-sm mdi mdi-pencil font-size-20' onClick={modalToggle}></button>
                                             </div>
                                         </div>
 
@@ -546,7 +572,7 @@ export default function Services() {
                                                 <span>30 min</span>
                                             </div>
                                             <div>
-                                                <i className="mdi mdi-pencil font-size-20"></i>
+                                                <button className='btn btn-sm mdi mdi-pencil font-size-20' onClick={modalToggle}></button>
                                             </div>
                                         </div>
 
@@ -597,7 +623,7 @@ export default function Services() {
                                                 <span>30 min</span>
                                             </div>
                                             <div>
-                                                <i className="mdi mdi-pencil font-size-20"></i>
+                                                <button className='btn btn-sm mdi mdi-pencil font-size-20' onClick={modalToggle}></button>
                                             </div>
                                         </div>
 
@@ -636,22 +662,119 @@ export default function Services() {
 
                 </div>
 
-                <Modal
-                    isOpen={modal}
-                    size="lg"
-                >
+                <Modal isOpen={modal} size="md">
                     <ModalHeader toggle={modalToggle} tag="div" className='modal-header-default'>
-                        <h6 className='text-uppercase'>nEW cLOSE oUT</h6>
+                        <h6 className='text-uppercase'>Update Service</h6>
                         <div className='d-flex align-items-center justify-content-end'>
-                            <button className='btn btn-secondary btn-sm me-3'>FINALIZE</button>
-                            <button className='btn btn-warning btn-sm me-3'>UNRESOLVE</button>
                             <button className='btn btn-primary btn-sm me-3'>Save</button>
-                            <button className='btn mdi mdi-delete-outline btn-sm' style={{ fontSize: '20px' }}></button>
                         </div>
 
                     </ModalHeader>
                     <ModalBody>
                         <div className="row">
+                            <div className="col-6">
+                                <FlotingInput
+                                    type="text"
+                                    label="Service Name"
+                                    onChange={handleOnChange}
+                                    id="serviceName"
+                                    value={fields.serviceName}
+                                    name="serviceName"
+                                // parentClass=""
+                                />
+                            </div>
+                            <div className="col-6">
+                                <FlotingInput
+                                    type="select"
+                                    label="Category"
+                                    onChange={handleOnChange}
+                                    id="category"
+                                    value={fields.category}
+                                    name="category"
+                                    options={["Hire Cut", "Women Cut", "Nail Cut"]}
+                                />
+                            </div>
+                            <div className="col-7">
+                                <FileUploader
+                                    multiple={false}
+                                    handleChange={handleOnChangeResume}
+                                    name="resume"
+                                    types={["jpg", "png", "JPEG"]}
+                                    classes="input-drage-drop"
+                                />
+                            </div>
+                            <div className="col-5">
+                                <FlotingInput
+                                    type="text"
+                                    label="Duration"
+                                    onChange={handleOnChange}
+                                    id="duration"
+                                    value={fields.Duration}
+                                    name="duration"
+                                // parentClass=""
+                                />
+                            </div>
+
+                            <div className="col-4">
+                                <FlotingInput
+                                    type="select"
+                                    label="Price Type"
+                                    onChange={handleOnChange}
+                                    id="priceType"
+                                    value={fields.priceType}
+                                    name="priceType"
+                                    options={["Price Range", "Price Range 2", "Price 3"]}
+                                />
+                            </div>
+                            <div className="col-4">
+                                <FlotingInput
+                                    type="text"
+                                    label="Min. Price"
+                                    onChange={handleOnChange}
+                                    id="minPrice"
+                                    value={fields.minPrice}
+                                    name="minPrice"
+                                // parentClass=""
+                                />
+                            </div>
+                            <div className="col-4">
+                                <FlotingInput
+                                    type="text"
+                                    label="Max. Price"
+                                    onChange={handleOnChange}
+                                    id="maxPrice"
+                                    value={fields.maxPrice}
+                                    name="maxPrice"
+                                // parentClass=""
+                                />
+                            </div>
+                            <div className="col-6">
+                                <FlotingInput
+                                    rows="4"
+                                    type="textarea"
+                                    label="Max. Price"
+                                    onChange={handleOnChange}
+                                    id="maxPrice"
+                                    value={fields.maxPrice}
+                                    name="maxPrice"
+                                // parentClass=""
+                                />
+                            </div>
+                            <div className="col-6">
+                                <div class="form-check form-switch form-switch-custom">
+                                    <label class="form-check-label" for="Consent">Consent Forms</label>
+                                    <input class="form-check-input" type="checkbox" role="switch" id="Consent" />
+                                </div>
+                                <div class="form-check form-switch form-switch-custom">
+                                    <label class="form-check-label" for="Active">Active</label>
+                                    <input class="form-check-input" type="checkbox" role="switch" id="Active" />
+                                </div>
+                                <div class="form-check form-switch form-switch-custom">
+                                    <label class="form-check-label" for="Visible">Visible</label>
+                                    <input class="form-check-input" type="checkbox" role="switch" id="Visible" />
+                                </div>
+                            </div>
+
 
                         </div>
                     </ModalBody>

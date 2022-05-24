@@ -35,16 +35,30 @@ const FlotingInput = (props) => {
                         <option value="3">3</option> */}
                     </select>
                     :
-                    <input
-                        type={props.type}
-                        class="form-control"
-                        id={props.id}
-                        onChange={props.onChange}
-                        onFocus={handleOnFocus}
-                        onBlur={handleOnBlur}
-                        value={props.value}
-                        name={props.name}
-                    />
+                    props.type === 'textarea' ?
+                        <textarea
+                            type={props.type}
+                            class="form-control"
+                            id={props.id}
+                            onChange={props.onChange}
+                            onFocus={handleOnFocus}
+                            onBlur={handleOnBlur}
+                            value={props.value}
+                            name={props.name}
+                            cols={props.cols}
+                            rows={props.rows}
+                        ></textarea>
+                        :
+                        <input
+                            type={props.type}
+                            class="form-control"
+                            id={props.id}
+                            onChange={props.onChange}
+                            onFocus={handleOnFocus}
+                            onBlur={handleOnBlur}
+                            value={props.value}
+                            name={props.name}
+                        />
             }
 
 
