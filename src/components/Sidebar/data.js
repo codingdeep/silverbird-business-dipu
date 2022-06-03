@@ -66,6 +66,13 @@ const data = [
         icon: 'mdi mdi-account-circle',
         child: false
     },
+    {
+        id: "9",
+        title: 'Services Technician',
+        link: '/servicesTech',
+        icon: 'mdi mdi-account-circle',
+        child: false
+    },
 ];
 
 export default data;
