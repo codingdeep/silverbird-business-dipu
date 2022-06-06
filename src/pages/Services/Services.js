@@ -47,7 +47,7 @@ export default function Services() {
             <div>
                 <div className="row mt-3">
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">

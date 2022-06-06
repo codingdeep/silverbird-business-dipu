@@ -42,12 +42,12 @@ export default function Payroll() {
         <>
             <div className='bg-white rounded p-5 shadow-sm'>
                 <div className='row align-items-center'>
-                    <div className="col-xl-8">
-                        <div className="row align-items-center">
-                            <div className="col-lg-3">
+                    <div className="col-xl-8 mb-md-3">
+                        <div className="row ">
+                            <div className="col-md-3 col-lg-2  mb-2 mb-xl-0">
                                 <h5 className='text-uppercase text-dark mb-0'>Close Out</h5>
                             </div>
-                            <div className="col-lg-3">
+                            <div className="col-lg-3 col-md-3">
                                 <DatePicker
                                     selected={startDate}
                                     onChange={(date) => setStartDate(date)}
@@ -55,7 +55,7 @@ export default function Payroll() {
                                     className="form-control form-control-sm"
                                 />
                             </div>
-                            <div className="col-lg-3">
+                            <div className="col-lg-3 col-md-4">
                                 <DatePicker
                                     selected={endDate}
                                     onChange={(date) => setEndDate(date)}
@@ -63,14 +63,14 @@ export default function Payroll() {
                                     className="form-control form-control-sm"
                                 />
                             </div>
-                            <div className="col-lg-3">
+                            <div className="col-lg-2 col-md-2">
                                 <button className='btn btn-warning text-white btn-sm'>Apply</button>
                             </div>
                         </div>
 
                     </div>
                     <div className="col-xl-4">
-                        <div className="d-flex justify-content-end">
+                        <div className="d-flex justify-content-xxl-end">
                             <button className='btn btn-white btn-sm ms-2'>Clear Filter</button>
                             <button className='btn btn-white btn-sm ms-2' onClick={modalToggle}>
                                 <i className="mdi mdi-account-plus-outline me-2"></i>
