@@ -30,7 +30,6 @@ export default function HomeAppointments() {
                         <NavItem>
                             <NavLink
                                 className={classnames({ active: index === "1" })}
-                                onClick={toggle}
                                 onClick={() => toggle("1")}
                             >
                                 Pending
@@ -50,7 +49,7 @@ export default function HomeAppointments() {
                         <TabPane tabId="1">
                             {/* single  */}
                             <div className="row mb-3">
-                                <div className="col-md-9">
+                                <div className="col-9">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={avatar2} />
@@ -61,14 +60,14 @@ export default function HomeAppointments() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3">
+                                <div className="col-3">
                                     <Avatar className='avatar-xs me-1' src={avatar} />
                                 </div>
                             </div>
 
                             {/* single  */}
                             <div className="row mb-3">
-                                <div className="col-md-9">
+                                <div className="col-9">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={avatar3} />
@@ -79,14 +78,14 @@ export default function HomeAppointments() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3">
+                                <div className="col-3">
                                     <Avatar className='avatar-xs me-1' src={avatar3} />
                                 </div>
                             </div>
 
                             {/* single  */}
                             <div className="row mb-3">
-                                <div className="col-md-9">
+                                <div className="col-9">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={avatar} />
@@ -97,14 +96,14 @@ export default function HomeAppointments() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3">
+                                <div className="col-3">
                                     <Avatar className='avatar-xs me-1' src={avatar} />
                                 </div>
                             </div>
 
                             {/* Single  */}
                             <div className="row mb-3">
-                                <div className="col-md-9">
+                                <div className="col-9">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={avatar3} />
@@ -115,7 +114,7 @@ export default function HomeAppointments() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3">
+                                <div className="col-3">
                                     <Avatar className='avatar-xs me-1' src={avatar} />
                                 </div>
                             </div>
@@ -123,7 +122,7 @@ export default function HomeAppointments() {
                         <TabPane tabId="2">
                             {/* single  */}
                             <div className="row mb-3">
-                                <div className="col-md-9">
+                                <div className="col-9">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={avatar} />
@@ -134,14 +133,14 @@ export default function HomeAppointments() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3">
+                                <div className="col-3">
                                     <Avatar className='avatar-xs me-1' src={avatar2} />
                                 </div>
                             </div>
 
                             {/* single  */}
                             <div className="row mb-3">
-                                <div className="col-md-9">
+                                <div className="col-9">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={avatar2} />
@@ -152,14 +151,14 @@ export default function HomeAppointments() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3">
+                                <div className="col-3">
                                     <Avatar className='avatar-xs me-1' src={avatar3} />
                                 </div>
                             </div>
 
                             {/* single  */}
                             <div className="row mb-3">
-                                <div className="col-md-9">
+                                <div className="col-9">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={avatar} />
@@ -170,14 +169,14 @@ export default function HomeAppointments() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3">
+                                <div className="col-3">
                                     <Avatar className='avatar-xs me-1' src={avatar3} />
                                 </div>
                             </div>
 
                             {/* Single  */}
                             <div className="row mb-3">
-                                <div className="col-md-9">
+                                <div className="col-9">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={avatar2} />
@@ -188,7 +187,7 @@ export default function HomeAppointments() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-3">
+                                <div className="col-3">
                                     <Avatar className='avatar-xs me-1' src={avatar3} />
                                 </div>
                             </div>

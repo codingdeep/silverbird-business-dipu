@@ -5,8 +5,8 @@ export default function HomeStatus() {
         <div className='mb-3'>
             <div className="row">
                 {/* item  */}
-                <div className="col-2">
-                    <div className="card card-default px-4 py-3">
+                <div className="col-md-6 col-lg-4 col-xxl-2">
+                    <div className="card card-default px-4 py-3 mb-3">
                         <div class="d-flex">
                             <div class="flex-shrink-0 ">
                                 <div className="icon rounded-circle bg-primary-opacity">
@@ -21,8 +21,8 @@ export default function HomeStatus() {
                     </div>
                 </div>
                 {/* item  */}
-                <div className="col-2">
-                    <div className="card card-default px-4 py-3">
+                <div className="col-md-6 col-lg-4 col-xxl-2">
+                    <div className="card card-default px-4 py-3 mb-3">
                         <div class="d-flex">
                             <div class="flex-shrink-0 ">
                                 <div className="icon rounded-circle bg-success-opacity">
@@ -37,8 +37,8 @@ export default function HomeStatus() {
                     </div>
                 </div>
                 {/* item  */}
-                <div className="col-2">
-                    <div className="card card-default px-4 py-3">
+                <div className="col-md-6 col-lg-4 col-xxl-2">
+                    <div className="card card-default px-4 py-3 mb-3">
                         <div class="d-flex">
                             <div class="flex-shrink-0 ">
                                 <div className="icon rounded-circle bg-info-opacity">
@@ -53,8 +53,8 @@ export default function HomeStatus() {
                     </div>
                 </div>
                 {/* item  */}
-                <div className="col-2">
-                    <div className="card card-default px-4 py-3">
+                <div className="col-md-6 col-lg-4 col-xxl-2">
+                    <div className="card card-default px-4 py-3 mb-3">
                         <div class="d-flex">
                             <div class="flex-shrink-0 ">
                                 <div className="icon rounded-circle bg-warning-opacity">
@@ -69,8 +69,8 @@ export default function HomeStatus() {
                     </div>
                 </div>
                 {/* item  */}
-                <div className="col-2">
-                    <div className="card card-default px-4 py-3">
+                <div className="col-md-6 col-lg-4 col-xxl-2">
+                    <div className="card card-default px-4 py-3 mb-3">
                         <div class="d-flex">
                             <div class="flex-shrink-0 ">
                                 <div className="icon rounded-circle bg-danger-opacity">
@@ -86,8 +86,8 @@ export default function HomeStatus() {
                 </div>
 
                 {/* item  */}
-                <div className="col-2">
-                    <div className="card card-default px-4 py-3">
+                <div className="col-md-6 col-lg-4 col-xxl-2">
+                    <div className="card card-default px-4 py-3 mb-3">
                         <div class="d-flex">
                             <div class="flex-shrink-0 ">
                                 <div className="icon rounded-circle bg-purple-opacity">

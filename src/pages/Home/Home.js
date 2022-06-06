@@ -16,7 +16,7 @@ export default function Home() {
         <div>
             {/* Top Filter Area  */}
             <div className="row justify-content-between mb-3">
-                <div className="col-md-4">
+                <div className="col-md-8 col-xl-6 col-xxl-4">
                     <div className='bg-white rounded px-5 py-2'>
                         <Nav className="default justify-content-between" >
                             <NavItem>
@@ -43,7 +43,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="col-md-4 d-flex justify-content-end align-items-center">
-                    <div className='d-flex align-items-center'>
+                    <div className='d-flex align-items-center flex-wrap'>
                         <span className='text-warning me-3'>Bookings</span>
                         <div class="form-check form-switch d-flex align-items-center">
                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />

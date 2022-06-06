@@ -45,7 +45,7 @@ export default function HomeProducts() {
                         <TabPane tabId="1">
                             {/* single  */}
                             <div className="row mb-3 aling-items-center">
-                                <div className="col-md-8">
+                                <div className="col-8">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={product1} rounded={true} />
@@ -56,7 +56,7 @@ export default function HomeProducts() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-4">
+                                <div className="col-4">
                                     <span className='text-dark me-2'>$15.00</span>
                                     <span className='bg-success-opacity px-4 py-1 rounded' >7</span>
                                 </div>
@@ -64,7 +64,7 @@ export default function HomeProducts() {
 
                             {/* single  */}
                             <div className="row mb-3 aling-items-center">
-                                <div className="col-md-8">
+                                <div className="col-8">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={product2} rounded={true} />
@@ -75,7 +75,7 @@ export default function HomeProducts() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-4">
+                                <div className="col-4">
                                     <span className='text-dark me-2'>$13.00</span>
                                     <span className='bg-warning-opacity px-4 py-1 rounded' >-5</span>
                                 </div>
@@ -83,7 +83,7 @@ export default function HomeProducts() {
 
                             {/* single  */}
                             <div className="row mb-3 aling-items-center">
-                                <div className="col-md-8">
+                                <div className="col-8">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={product3} rounded={true} />
@@ -94,7 +94,7 @@ export default function HomeProducts() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-4">
+                                <div className="col-4">
                                     <span className='text-dark me-2'>$17.00</span>
                                     <span className='bg-danger-opacity px-4 py-1 rounded' >-5</span>
                                 </div>
@@ -102,7 +102,7 @@ export default function HomeProducts() {
 
                             {/* Single  */}
                             <div className="row mb-3 aling-items-center">
-                                <div className="col-md-8">
+                                <div className="col-8">
                                     <div class="d-flex aling-items-center">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={product1} rounded={true} />
@@ -113,7 +113,7 @@ export default function HomeProducts() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-4">
+                                <div className="col-4">
                                     <span className='text-dark me-2'>$15.00</span>
                                     <span className='bg-success-opacity px-4 py-1 rounded' >9</span>
                                 </div>
@@ -122,7 +122,7 @@ export default function HomeProducts() {
                         <TabPane tabId="2">
                             {/* single  */}
                             <div className="row mb-3 aling-items-center">
-                                <div className="col-md-8">
+                                <div className="col-8">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={product2} rounded={true} />
@@ -133,14 +133,14 @@ export default function HomeProducts() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-4">
+                                <div className="col-4">
                                     <span className='text-dark me-2'>$13.00</span>
                                     <span className='bg-warning-opacity px-4 py-1 rounded' >-5</span>
                                 </div>
                             </div>
                             {/* single  */}
                             <div className="row mb-3 aling-items-center">
-                                <div className="col-md-8">
+                                <div className="col-8">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={product1} rounded={true} />
@@ -151,7 +151,7 @@ export default function HomeProducts() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-4">
+                                <div className="col-4">
                                     <span className='text-dark me-2'>$15.00</span>
                                     <span className='bg-success-opacity px-4 py-1 rounded' >7</span>
                                 </div>
@@ -160,7 +160,7 @@ export default function HomeProducts() {
 
                             {/* Single  */}
                             <div className="row mb-3 aling-items-center">
-                                <div className="col-md-8">
+                                <div className="col-8">
                                     <div class="d-flex aling-items-center">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={product1} rounded={true} />
@@ -171,14 +171,14 @@ export default function HomeProducts() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-4">
+                                <div className="col-4">
                                     <span className='text-dark me-2'>$15.00</span>
                                     <span className='bg-success-opacity px-4 py-1 rounded' >9</span>
                                 </div>
                             </div>
                             {/* single  */}
                             <div className="row mb-3 aling-items-center">
-                                <div className="col-md-8">
+                                <div className="col-8">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <Avatar className='me-1' src={product3} rounded={true} />
@@ -189,7 +189,7 @@ export default function HomeProducts() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-4">
+                                <div className="col-4">
                                     <span className='text-dark me-2'>$17.00</span>
                                     <span className='bg-danger-opacity px-4 py-1 rounded' >-5</span>
                                 </div>
