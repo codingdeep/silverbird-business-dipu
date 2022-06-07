@@ -70,7 +70,7 @@ const ServiceTech = () => {
                 <h5 className='mt-2 text-uppercase'>Hair cut</h5>
                 <div className="row mt-3">
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-md-6 col-lg-4 col-xl-3">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -94,7 +94,7 @@ const ServiceTech = () => {
                         </div>
                     </div>
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-md-6 col-lg-4 col-xl-3">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -118,7 +118,7 @@ const ServiceTech = () => {
                         </div>
                     </div>
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-md-6 col-lg-4 col-xl-3">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -142,7 +142,7 @@ const ServiceTech = () => {
                         </div>
                     </div>
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-md-6 col-lg-4 col-xl-3">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -166,7 +166,7 @@ const ServiceTech = () => {
                         </div>
                     </div>
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-md-6 col-lg-4 col-xl-3">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -198,7 +198,7 @@ const ServiceTech = () => {
                 <h5 className='mt-2 text-uppercase'>Hair color</h5>
                 <div className="row mt-3">
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-md-6 col-lg-4 col-xl-3">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -222,7 +222,7 @@ const ServiceTech = () => {
                         </div>
                     </div>
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-md-6 col-lg-4 col-xl-3">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -246,7 +246,7 @@ const ServiceTech = () => {
                         </div>
                     </div>
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-md-6 col-lg-4 col-xl-3">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -270,7 +270,7 @@ const ServiceTech = () => {
                         </div>
                     </div>
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-md-6 col-lg-4 col-xl-3">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -294,7 +294,7 @@ const ServiceTech = () => {
                         </div>
                     </div>
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-md-6 col-lg-4 col-xl-3">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -318,7 +318,7 @@ const ServiceTech = () => {
                         </div>
                     </div>
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-md-6 col-lg-4 col-xl-3">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -342,7 +342,7 @@ const ServiceTech = () => {
                         </div>
                     </div>
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-md-6 col-lg-4 col-xl-3">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -366,7 +366,7 @@ const ServiceTech = () => {
                         </div>
                     </div>
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-md-6 col-lg-4 col-xl-3">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">

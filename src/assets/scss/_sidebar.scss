@@ -3,10 +3,15 @@
     background-color: $white;
     padding-left: 10px;
     padding-right: 10px;
-    position: fixed;
-    left: 0;
+    position: absolute;
+    left: -250px;
     height: 100vh;
     padding-top: 83px;
+
+    @include media-breakpoint-up(md) {
+        position: fixed;
+        left: 0;
+    }
 
 
     li {
@@ -14,6 +19,7 @@
         padding: 10px;
 
         &.active {
+
             background-color: $primary;
             border-radius: 12px;
 
@@ -84,10 +90,17 @@
 
 .minified-sidebar {
     .sidebar {
+        z-index: 100;
+
+        left: 0px;
+
         .accordion {
             .accordion-button {
                 &:after {
-                    display: none;
+
+                    @include media-breakpoint-up(md) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -95,8 +108,12 @@
         li {
             .single-item-link {
                 span {
-                    visibility: hidden;
-                    opacity: 0;
+                    @include media-breakpoint-up(md) {
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+
+
                 }
             }
         }

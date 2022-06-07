@@ -17,7 +17,7 @@ export default function Layout(props) {
         <div>
             <Header sidebarToggle={handleToggle} />
             <div className={classnames("content-wrapper", { "minified-sidebar": toggle })} >
-                <Sidebar toggle={toggle} />
+                <Sidebar toggle={toggle} sidebarToggle={handleToggle} />
                 <main>{props.children}</main>
             </div>
 

@@ -26,6 +26,15 @@ function Sidebar(props) {
         }
     }
 
+    const sidebarToggle = () => {
+        let screnWidth = window.screen.width;
+
+        if (screnWidth < 767) {
+            props.sidebarToggle()
+        }
+
+    }
+
     return (
         <aside className={classNames('sidebar')} >
 
@@ -47,8 +56,8 @@ function Sidebar(props) {
                                 <AccordionBody accordionId={e.id} tag="ul">
                                     {
                                         e.child && e.child.map(ch => {
-                                            return <li key={ch.cId} className='active'>
-                                                <Link to={ch.link} className='single-item-link' >
+                                            return <li key={ch.cId} className='active' >
+                                                <Link to={ch.link} className='single-item-link' onClick={() => sidebarToggle()}>
                                                     <i className="mdi mdi-minus"></i>
                                                     <span className='title'>{ch.title}</span>
 
@@ -64,7 +73,7 @@ function Sidebar(props) {
                                     className={active === i ? "active " : null}
                                     onClick={() => hanleSidebarActive(i)}
                                 >
-                                    <Link to={e.link} className='single-item-link'>
+                                    <Link to={e.link} className='single-item-link' onClick={() => sidebarToggle()}>
                                         <i className={e.icon}></i>
                                         <span className='title'>{e.title}</span>
 

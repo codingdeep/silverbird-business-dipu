@@ -21,7 +21,7 @@ export default function Staff(props) {
             <div>
                 <div className="row mt-3">
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -54,7 +54,7 @@ export default function Staff(props) {
                     </div>
 
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -87,7 +87,7 @@ export default function Staff(props) {
                     </div>
 
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -120,7 +120,7 @@ export default function Staff(props) {
                     </div>
 
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -153,7 +153,7 @@ export default function Staff(props) {
                     </div>
 
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -186,7 +186,7 @@ export default function Staff(props) {
                     </div>
 
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -219,7 +219,7 @@ export default function Staff(props) {
                     </div>
 
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -252,7 +252,7 @@ export default function Staff(props) {
                     </div>
 
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -285,7 +285,7 @@ export default function Staff(props) {
                     </div>
 
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -318,7 +318,7 @@ export default function Staff(props) {
                     </div>
 
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -351,7 +351,7 @@ export default function Staff(props) {
                     </div>
 
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -384,7 +384,7 @@ export default function Staff(props) {
                     </div>
 
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -417,7 +417,7 @@ export default function Staff(props) {
                     </div>
 
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -450,7 +450,7 @@ export default function Staff(props) {
                     </div>
 
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -484,7 +484,7 @@ export default function Staff(props) {
 
 
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">
@@ -517,7 +517,7 @@ export default function Staff(props) {
                     </div>
 
                     {/* Sinlge  Item */}
-                    <div className="col-xl-3">
+                    <div className="col-xl-3 col-md-6 col-lg-4">
                         <div className="card card-default mb-3">
                             <div className="card-body">
                                 <div className="d-flex mb-2">

@@ -7,13 +7,20 @@
     .sidebar {
         width: 250px;
         transition: width .5s, padding .5s;
+
+
     }
 
     main {
         transition: width .5s, padding .5s;
-        padding-left: 275px;
+        padding-left: 30px;
         padding-top: 83px;
-        width: calc(100% - 30px);
+
+        @include media-breakpoint-up(md) {
+            // position: fixed;
+            padding-left: 275px;
+            width: calc(100% - 30px);
+        }
     }
 
     // width: 60px;
@@ -22,12 +29,21 @@
         // transition: width 2s, padding 2s;
 
         .sidebar {
-            width: 60px;
+            // width: 60px;
+
+            @include media-breakpoint-up(md) {
+                width: 60px;
+            }
+
 
         }
 
         main {
-            padding-left: 75px;
+            // padding-left: 75px;
+
+            @include media-breakpoint-up(md) {
+                padding-left: 75px;
+            }
         }
     }
 
