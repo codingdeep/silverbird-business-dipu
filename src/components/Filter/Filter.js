@@ -114,13 +114,13 @@ export default function Filter(props) {
                 </div>
                 <div className="col-xl-4 col-md-6 col-lg-5">
                     <div className="d-flex flex-column flex-wrap flex-md-row justify-content-end">
-                        <button className='btn btn-white btn-sm ms-2 mb-2'>Clear Filter</button>
-                        <button className='btn btn-white btn-sm ms-2 mb-2' onClick={props.handleAddNew}>
+                        <button className='btn btn-white btn-sm ms-lg-2 mb-2'>Clear Filter</button>
+                        <button className='btn btn-white btn-sm ms-md-2 mb-2' onClick={props.handleAddNew}>
                             <i className="mdi mdi-account-plus-outline me-2"></i>
                             Add New
                         </button>
-                        <div className='ms-2 d-inline-block'>
-                            <button className='btn btn-white btn-sm ms-2 '>
+                        <div className='ms-md-2 d-inline-block'>
+                            <button className='btn btn-white btn-sm ms-lg-2 '>
                                 <i className="mdi mdi-chevron-left"></i>
                             </button>
                             <button className='btn btn-white btn-sm ms-2 '>
