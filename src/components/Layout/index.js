@@ -11,8 +11,6 @@ export default function Layout(props) {
         setToggle(!toggle)
     }
 
-    console.log(toggle);
-
     return (
         <div>
             <Header sidebarToggle={handleToggle} />
