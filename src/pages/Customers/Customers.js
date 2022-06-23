@@ -1,6 +1,7 @@
 import React from 'react';
 import Filter from '../../components/Filter/Filter';
 import Avatar from '../../components/Avatar';
+import { Link } from 'react-router-dom'
 
 
 import user from '../../assets/images/avatar.png';
@@ -10,22 +11,32 @@ export default function Customers() {
         <>
             <Filter
                 pageTitle="Customar"
+                search={true}
+                select={true}
+                searchBtn={true}
+                serviceSelect={false}
+                clear={true}
+                addNew={true}
+                pasignation={true}
             />
             <div>
                 <div className="row mt-3">
                     {/* Sinlge  Item */}
                     <div className="col-xl-3">
-                        <div className="card card-default mb-3">
+                        <div className="card card-default mb-3 customer">
                             <div className="card-body">
-                                <div className="d-flex mb-2">
-                                    <div className="flex-shrink-0 me-2">
-                                        <Avatar src={user} circle={true} className="avatar-md rounded" />
+                                <Link to="/customer-details" className='customer-details-link'>
+                                    <div className="d-flex mb-2">
+                                        <div className="flex-shrink-0 me-2">
+                                            <Avatar src={user} circle={true} className="avatar-md rounded" />
+                                        </div>
+                                        <div className="flex-grow-1">
+
+                                            <h6 className='text-dark'>Anna E. Johnson</h6>
+                                            <span>$$305.00</span>
+                                        </div>
                                     </div>
-                                    <div className="flex-grow-1">
-                                        <h6 className='text-dark'>Anna E. Johnson</h6>
-                                        <span>$$305.00</span>
-                                    </div>
-                                </div>
+                                </Link>
 
                                 <div className="row">
                                     <div className="col-10">

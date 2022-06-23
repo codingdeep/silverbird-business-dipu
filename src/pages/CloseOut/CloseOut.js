@@ -141,7 +141,7 @@ export default function Payroll() {
                     size="lg"
                 >
                     <ModalHeader toggle={modalToggle} tag="div" className='modal-header-default'>
-                        <h6 className='text-uppercase'>nEW cLOSE oUT</h6>
+                        <h6 className='text-uppercase'>New close out</h6>
                         <div className='d-flex align-items-center justify-content-end'>
                             <button className='btn btn-secondary btn-sm me-3'>FINALIZE</button>
                             <button className='btn btn-warning btn-sm me-3'>UNRESOLVE</button>

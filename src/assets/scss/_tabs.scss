@@ -8,6 +8,7 @@
         border-bottom: 2px solid $border-color;
 
         .nav-link {
+            cursor: pointer;
 
             &.active {
                 color: $warning;
@@ -21,6 +22,24 @@
                     height: 2px;
                     content: '';
                     background-color: $warning;
+                }
+            }
+        }
+    }
+
+    &.tabs-style-1 {
+        .nav-item {
+            width: auto;
+            border-bottom: 2px solid transparent;
+
+            .nav-link {
+                &.active {
+                    &:after {
+                        width: 17px;
+                        height: 3px;
+                        left: 50%;
+                        transform: translateX(-50%)
+                    }
                 }
             }
         }

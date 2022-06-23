@@ -14,6 +14,7 @@ import CloseOut from "./pages/CloseOut/CloseOut";
 import AddNewStaff from "./pages/Staff/AddNewStaff";
 import ServiceTech from "./pages/Services/ServiceTech";
 import { useEffect } from "react";
+import CustomerDetails from './pages/Customers/CustomerDetails'
 
 
 
@@ -42,6 +43,7 @@ function App() {
           <Route exact path="/payroll" component={Payroll} />
           <Route exact path="/close-out" component={CloseOut} />
           <Route exact path="/servicesTech" component={ServiceTech} />
+          <Route exact path="/customer-details" component={CustomerDetails} />
 
         </Switch>
       </Layout>
