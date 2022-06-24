@@ -29,4 +29,31 @@
             text-decoration: none;
         }
     }
+
+    &.card-visit {
+        .card-body {
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+        .single-item {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid $border-color;
+
+            .item-header {
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
 }

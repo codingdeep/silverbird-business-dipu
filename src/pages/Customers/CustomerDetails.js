@@ -15,7 +15,7 @@ import {
 
 import classnames from "classnames";
 
-import { CustomerDetails, Formulas, Info, PendingForms, Reward, ProfileInfo, Communications } from "../../components/Profile";
+import { Visit, Formulas, Info, PendingForms, Reward, ProfileInfo, Communications } from "../../components/Profile";
 
 
 export class CustomersDetailsInfo extends Component {
@@ -243,7 +243,7 @@ export class CustomersDetailsInfo extends Component {
                                 </TabPane>
 
                                 <TabPane tabId="2">
-                                    <CustomerDetails />
+                                    <Visit />
                                 </TabPane>
 
                                 <TabPane tabId="3">
