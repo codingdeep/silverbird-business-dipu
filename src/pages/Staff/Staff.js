@@ -16,7 +16,13 @@ export default function Staff(props) {
         <>
             <Filter
                 pageTitle="Staff"
-                handleAddNew={handleAddNew}
+                search={true}
+                select={true}
+                searchBtn={true}
+                serviceSelect={false}
+                clear={true}
+                addNew={true}
+                pasignation={true}
             />
             <div>
                 <div className="row mt-3">

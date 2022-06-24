@@ -64,7 +64,13 @@ const ServiceTech = () => {
         <>
             <Filter
                 pageTitle="Service Technicians"
-                filter={false}
+                search={true}
+                select={true}
+                searchBtn={true}
+                serviceSelect={false}
+                clear={true}
+                addNew={true}
+                pasignation={true}
             />
             <div>
                 <h5 className='mt-2 text-uppercase'>Hair cut</h5>

@@ -62,8 +62,14 @@ export default function Staff() {
     return (
         <>
             <Filter
-                pageTitle="Indevtory"
-                handleAddNew={modalToggle2}
+                pageTitle="Inventory"
+                search={true}
+                select={true}
+                searchBtn={true}
+                serviceSelect={false}
+                clear={true}
+                addNew={true}
+                pasignation={true}
             />
 
             <div className='card card-default my-3'>
