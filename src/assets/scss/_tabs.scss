@@ -45,3 +45,7 @@
         }
     }
 }
+
+.table-striped-light>tbody>tr:nth-of-type(odd)>* {
+    background-color: rgba($light, .4);
+}
