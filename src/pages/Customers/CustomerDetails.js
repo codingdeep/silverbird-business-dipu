@@ -215,18 +215,11 @@ export class CustomersDetailsInfo extends Component {
                                                 Formulas
                                             </NavLink>
                                         </NavItem>
+
                                         <NavItem>
                                             <NavLink
                                                 className={classnames({ active: index === "6" })}
                                                 onClick={() => this.toggle("6")}
-                                            >
-                                                Wait Lists
-                                            </NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink
-                                                className={classnames({ active: index === "7" })}
-                                                onClick={() => this.toggle("7")}
                                             >
                                                 Communications
                                             </NavLink>
@@ -255,7 +248,7 @@ export class CustomersDetailsInfo extends Component {
                                 <TabPane tabId="5">
                                     <Formulas />
                                 </TabPane>
-                                <TabPane tabId="7">
+                                <TabPane tabId="6">
                                     <Communications />
                                 </TabPane>
                             </TabContent>

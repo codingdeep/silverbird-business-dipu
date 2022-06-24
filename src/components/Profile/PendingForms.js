@@ -4,7 +4,7 @@ export const PendingForms = () => {
   return (
     <>
       <div className="card card-default mb-5">
-        <div className="card-body px-5">
+        <div className="card-body">
 
           <div className="d-flex align-items-center justify-content-between">
             <h4 className="text-uppercase text-dark">Pending Forms</h4>
