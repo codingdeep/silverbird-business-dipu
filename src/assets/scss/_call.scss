@@ -1,0 +1,76 @@
+.call-background {
+    width: 312px;
+    height: 156px;
+    border-radius: 8px;
+    background-color: $primary;
+    padding: 20px 18px;
+
+    ul {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+            padding-left: 10px;
+            padding-right: 10px;
+            color: $white;
+        }
+    }
+}
+
+
+.call-expand {
+    .modal-dialog {
+        max-width: calc(100% - 275px);
+        margin: 0;
+        margin-left: 274px;
+        margin-top: 67px;
+
+
+        .modal-content {
+            border: 0;
+            background-color: $primary;
+            height: calc(100vh - 67px);
+            margin-bottom: 0;
+            // display: none;
+
+            .modal-header {
+                background-color: $orang;
+                color: $white;
+
+                .modal-title {
+                    width: 100%;
+                }
+            }
+
+            .header-content {
+                // flex-direction: column;
+                justify-content: space-between;
+                margin-right: 100px;
+            }
+
+            .call-background {
+                width: auto;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                height: 100%;
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            .list-unstyled {
+                margin-top: 200px;
+            }
+        }
+    }
+
+    .modal-backdrop {
+        margin-left: 275px;
+        top: 67px;
+        // background-color: $primary;
+        // height: calc(100vh - 67px);
+    }
+}

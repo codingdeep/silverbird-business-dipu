@@ -6,6 +6,13 @@ const data = [
         icon: 'mdi mdi-grid',
         child: false
     },
+    {
+        id: "10",
+        title: 'Calendar',
+        link: '/calendar',
+        icon: 'mdi mdi-calendar',
+        child: false
+    },
     // {
     //     id: "2",
     //     title: 'UI',

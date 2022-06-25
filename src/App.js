@@ -35,6 +35,7 @@ function App() {
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/calendar" component={Calender} />
           <Route exact path="/customers" component={Customers} />
           <Route exact path="/services" component={Services} />
           <Route exact path="/staff" component={Staff} />

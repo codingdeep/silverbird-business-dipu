@@ -1,6 +1,28 @@
 // Button White
 .btn {
     text-transform: uppercase;
+
+    &.btn-iocn {
+        width: 45px;
+        height: 45px;
+
+        padding: 0;
+        color: $white;
+        background-color: darken($primary, 15%);
+
+        i {
+            font-size: 25px;
+        }
+
+        &.pill {
+            border-radius: 50%;
+        }
+
+        &.bg-danger {
+            background-color: $danger;
+        }
+
+    }
 }
 
 .btn-white {
