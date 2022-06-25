@@ -81,7 +81,7 @@ export default function Calender() {
                 </ul>
             </div>
 
-            <Modal isOpen={modal} wrapClassName="call-expand">
+            <Modal isOpen={modal} wrapClassName="call-expand" fade={false} backdrop={false}>
                 <ModalHeader toggle={toggle} tag="div">
 
                     <div className="d-flex header-content">

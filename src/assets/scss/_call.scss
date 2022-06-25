@@ -25,13 +25,13 @@
         max-width: calc(100% - 275px);
         margin: 0;
         margin-left: 274px;
-        margin-top: 67px;
+        margin-top: 83px;
 
 
         .modal-content {
             border: 0;
             background-color: $primary;
-            height: calc(100vh - 67px);
+            height: calc(100vh - 83px);
             margin-bottom: 0;
             // display: none;
 
@@ -65,12 +65,5 @@
                 margin-top: 200px;
             }
         }
-    }
-
-    .modal-backdrop {
-        margin-left: 275px;
-        top: 67px;
-        // background-color: $primary;
-        // height: calc(100vh - 67px);
     }
 }
