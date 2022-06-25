@@ -21,7 +21,7 @@ export default function Staff(props) {
                 searchBtn={true}
                 serviceSelect={false}
                 clear={true}
-                addNew={true}
+                addNew={{ status: true, addNewFun: handleAddNew }}
                 pasignation={true}
             />
             <div>

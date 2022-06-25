@@ -1,0 +1,18 @@
+// User Info
+.user-info {
+    position: relative;
+    z-index: 10;
+}
+
+// Personal Info 
+.personal-info {
+    flex-basis: 100%;
+    background-color: $light;
+    position: absolute;
+    left: 12px;
+    top: 85px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+}

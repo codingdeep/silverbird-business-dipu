@@ -9,8 +9,14 @@ import user from "../../assets/images/avatar.png";
 export default function Calender() {
 
     const [modal, setModal] = useState(false);
+    const [modal2, setModal1] = useState(false);
 
     const toggle = () => setModal(!modal);
+
+    const modalToggle2 = () => {
+        setModal1(!modal2)
+    }
+
 
     return (
         <div className='position-relative'>
@@ -27,9 +33,17 @@ export default function Calender() {
 
             <div className='card card-default my-3'>
                 <div class="card-header d-flex flex-nowrap">
-                    <h5 className='text-dark text-uppercase'>Products</h5>
+
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <Avatar src={user} circle={true} className="avatar-md rounded" />
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+
+                        </div>
+                    </div>
                     <div>
-                        <button class="btn btn-primary" >Add Product</button>
+                        <button class="btn btn-primary" onClick={modalToggle2}>Create Appointment</button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -191,6 +205,188 @@ export default function Calender() {
                 </ModalBody>
 
             </Modal>
+
+            <Modal
+                isOpen={modal2}
+                size="lg"
+            >
+                <ModalHeader toggle={modalToggle2} tag="div" className='modal-header-default position-relative'>
+                    <div class="d-flex user-info">
+                        <div class="flex-shrink-0">
+                            <Avatar src={user} circle={true} className="avatar-lg rounded" />
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5 className='text-dark'>Anna E. Johnson</h5>
+                        </div>
+                    </div>
+
+                    <div className='d-flex align-items-center justify-content-end'>
+                        <button className='btn btn-secondary btn-sm me-3'>FINALIZE</button>
+                        <button className='btn btn-warning btn-sm me-3'>UNRESOLVE</button>
+                        <button className='btn btn-primary btn-sm me-3'>Save</button>
+                        <button className='btn mdi mdi-delete-outline btn-sm' style={{ fontSize: '20px' }}></button>
+                    </div>
+                    {/* Personal Info  */}
+                    <div className="personal-info row justify-content-center">
+                        <div className="col-md-2">
+                            <div className='d-flex flex-column'>
+                                <small>PHONE</small>
+                                <span className='text-dark'>(301) 351-7872</span>
+                            </div>
+                        </div>
+                        <div className="col-md-2">
+                            <div className='d-flex flex-column'>
+                                <small>PHONE</small>
+                                <span className='text-dark'>(301) 351-7872</span>
+                            </div>
+                        </div>
+                        <div className="col-md-2">
+                            <div className='d-flex flex-column'>
+                                <small>PHONE</small>
+                                <span className='text-dark'>(301) 351-7872</span>
+                            </div>
+                        </div>
+                        <div className="col-md-2">
+                            <div className='d-flex flex-column'>
+                                <small>PHONE</small>
+                                <span className='text-dark'>(301) 351-7872</span>
+                            </div>
+                        </div>
+                        <div className="col-md-2">
+                            <div className='d-flex flex-column'>
+                                <small>PHONE</small>
+                                <span className='text-dark'>(301) 351-7872</span>
+                            </div>
+                        </div>
+                        <div className="col-md-2">
+                            <button className="btn btn-icon">
+                                <i className="mdi mdi-pencil"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+
+
+                </ModalHeader>
+                <ModalBody>
+
+                    <div className="card card-default mt-3 card-visit">
+
+                        <div className="card-body pt-0">
+                            {/* Single Item  */}
+                            <div className="single-item">
+                                <div className="item-header">
+                                    <h4 className='text-dark'>Next Appointments</h4>
+                                </div>
+                                <div className="row py-2">
+                                    <div className="col-md-2">
+                                        <i className="mdi mdi-check "></i>
+                                        <span className="ms-2 m-0">Confirmed</span>
+                                    </div>
+                                    <div className="col-md-2">
+                                        <i className="mdi  mdi-run "></i>
+                                        <span className="ms-2 m-0">Standing</span>
+                                    </div>
+                                    <div className="col-md-2">
+                                        <i className="mdi  mdi-phone "></i>
+                                        <span className="ms-2 m-0">Source</span>
+                                    </div>
+                                    <div className="col-md-2">
+                                        <i className="mdi  mdi-currency-usd "></i>
+                                        <span className="ms-2 m-0">Total: $40.00</span>
+                                    </div>
+                                </div>
+                                <div className="row align-items-end">
+                                    <div className="col-md-8">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <Avatar
+                                                    src={user}
+                                                    circle={true}
+                                                    className="avatar-xs ms-1 me-1"
+                                                />
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p className="text-dark mb-0">Women's Haircut With Cindy</p>
+                                                <div className="d-flex">
+                                                    <span className="me-2">09:00 am 09:30 am</span>
+                                                    <i className="mdi mdi-circle-medium px-3"></i>
+                                                    <span className="ms-1">Created by: Alex on Tue Aug 20</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 ">
+                                        <div className="d-flex justify-content-end">
+                                            <button className="btn btn-warning btn-sm me-3">Change</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Single Item  */}
+                            <div className="single-item">
+                                <div className="item-header">
+                                    <h4 className='text-dark'>Past Appointments </h4>
+                                </div>
+                                <div className="row py-2">
+                                    <div className="col-md-2">
+                                        <i className="mdi mdi-check "></i>
+                                        <span className="ms-2 m-0">Confirmed</span>
+                                    </div>
+                                    <div className="col-md-2">
+                                        <i className="mdi  mdi-run "></i>
+                                        <span className="ms-2 m-0">Standing</span>
+                                    </div>
+                                    <div className="col-md-2">
+                                        <i className="mdi  mdi-phone "></i>
+                                        <span className="ms-2 m-0">Source</span>
+                                    </div>
+                                    <div className="col-md-2">
+                                        <i className="mdi  mdi-currency-usd "></i>
+                                        <span className="ms-2 m-0">Total: $40.00</span>
+                                    </div>
+                                </div>
+                                <div className="row align-items-end">
+                                    <div className="col-md-8">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <Avatar
+                                                    src={user}
+                                                    circle={true}
+                                                    className="avatar-xs ms-1 me-1"
+                                                />
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <p className="text-dark mb-0">Women's Haircut With Cindy</p>
+                                                <div className="d-flex">
+                                                    <span className="me-2">09:00 am 09:30 am</span>
+                                                    <i className="mdi mdi-circle-medium px-3"></i>
+                                                    <span className="ms-1">Created by: Alex on Tue Aug 20</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 ">
+                                        <div className="d-flex justify-content-end">
+                                            <button className="btn btn-primary btn-sm me-3">REBOOK</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </ModalBody>
+
+            </Modal>
+
 
 
         </div>

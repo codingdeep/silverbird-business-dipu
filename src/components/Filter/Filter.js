@@ -38,7 +38,7 @@ export default function Filter(props) {
                 {search != false && <div className="col-xl-4 col-md-6 col-lg-5">
                     <div className="d-flex flex-column flex-wrap flex-md-row justify-content-end">
                         {clear != false && <ClearFilter />}
-                        {addNew != false && <AddNew />}
+                        {addNew.status != false && <AddNew handleAddNew={addNew.addNewFun} />}
                         {pasignation != false && <Pasignation />}
 
                     </div>
