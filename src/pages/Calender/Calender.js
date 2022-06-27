@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import Draggable from 'react-draggable';
 
 
 import Filter from '../../components/Filter/Filter';
@@ -15,6 +16,21 @@ export default function Calender() {
 
     const modalToggle2 = () => {
         setModal1(!modal2)
+    }
+
+    const eventLogger = (e, data) => {
+        console.log('Event: ', e);
+        console.log('Data: ', data);
+    };
+
+    const handleStart = () => {
+        console.log("handle start");
+    }
+    const handleDrag = () => {
+
+    }
+    const handleStop = () => {
+
     }
 
 
@@ -52,48 +68,61 @@ export default function Calender() {
 
             </div>
 
-            <div className="call-background">
-                <div class="d-flex">
-                    <div class="flex-shrink-0">
-                        <Avatar
-                            src={user}
-                            circle={true}
-                            className="avatar-sm circle"
-                        />
+            <Draggable
+                handle=".my-dargable"
+                defaultPosition={{ x: 0, y: 0 }}
+                // position={null}
+                // grid={[25, 25]}
+                scale={1}
+                onStart={handleStart}
+            // onDrag={handleDrag}
+            // onStop={handleStop}
+            >
+                <div className="call-background">
+                    <div class="d-flex my-dargable">
+                        <div class="flex-shrink-0">
+                            <Avatar
+                                src={user}
+                                circle={true}
+                                className="avatar-sm circle"
+                            />
+                        </div>
+                        <div class="flex-grow-1 ms-3 text-white">
+                            <h5 className='mb-0'>Sibbir Ahmad Mahadi</h5>
+                            <span>03.33</span>
+                        </div>
                     </div>
-                    <div class="flex-grow-1 ms-3 text-white">
-                        <h5 className='mb-0'>Sibbir Ahmad Mahadi</h5>
-                        <span>03.33</span>
-                    </div>
-                </div>
-                <ul className='list-unstyled'>
-                    <li>
-                        <button className='btn btn-iocn pill'>
-                            <i className="mdi mdi-microphone-off"></i>
-                        </button>
-                    </li>
-                    <li>
-                        <button className='btn btn-iocn pill bg-danger'>
-                            <i className="mdi mdi-phone"></i>
-                        </button>
-                    </li>
-                    <li>
-                        <button className='btn btn-iocn pill'>
-                            <i className="mdi mdi-plus"></i>
-                        </button>
-                    </li>
-                    <li>
-                        <button className='btn btn-iocn pill' onClick={toggle}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16.601" height="16.602" viewBox="0 0 16.601 16.602">
-                                <g id="Group_584" data-name="Group 584" transform="translate(-879.682 -468.97)">
-                                    <path id="Path_3683" data-name="Path 3683" d="M896.283,468.97v6.745l-2.594-2.594-3.112,3.112-1.557-1.556,3.113-3.113-2.594-2.594Zm-9.338,10.895-3.113,3.113,2.594,2.594h-6.744v-6.745l2.594,2.594,3.113-3.112Zm0,0" fill="#fff" />
-                                </g>
-                            </svg>
+                    <ul className='list-unstyled'>
+                        <li>
+                            <button className='btn btn-iocn pill'>
+                                <i className="mdi mdi-microphone-off"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button className='btn btn-iocn pill bg-danger'>
+                                <i className="mdi mdi-phone"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button className='btn btn-iocn pill'>
+                                <i className="mdi mdi-plus"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button className='btn btn-iocn pill' onClick={toggle}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16.601" height="16.602" viewBox="0 0 16.601 16.602">
+                                    <g id="Group_584" data-name="Group 584" transform="translate(-879.682 -468.97)">
+                                        <path id="Path_3683" data-name="Path 3683" d="M896.283,468.97v6.745l-2.594-2.594-3.112,3.112-1.557-1.556,3.113-3.113-2.594-2.594Zm-9.338,10.895-3.113,3.113,2.594,2.594h-6.744v-6.745l2.594,2.594,3.113-3.112Zm0,0" fill="#fff" />
+                                    </g>
+                                </svg>
 
-                        </button>
-                    </li>
-                </ul>
-            </div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </Draggable>
+
+
 
             <Modal isOpen={modal} wrapClassName="call-expand" fade={false} backdrop={false}>
                 <ModalHeader toggle={toggle} tag="div">
