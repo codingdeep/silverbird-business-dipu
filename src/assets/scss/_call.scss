@@ -4,6 +4,7 @@
     border-radius: 8px;
     background-color: $primary;
     padding: 20px 18px;
+    cursor: pointer;
 
     ul {
         margin-top: 20px;
@@ -68,8 +69,4 @@
             }
         }
     }
-}
-
-.my-dargable {
-    cursor: pointer;
 }
