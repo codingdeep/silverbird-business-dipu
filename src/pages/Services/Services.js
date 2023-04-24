@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
-import { FileUploader } from "react-drag-drop-files";
+//import { FileUploader } from "react-drag-drop-files";
 
 import Filter from '../../components/Filter/Filter';
 import Avatar from '../../components/Avatar';
@@ -147,13 +147,13 @@ export default function Services() {
                                 />
                             </div>
                             <div className="col-7">
-                                <FileUploader
-                                    multiple={false}
-                                    handleChange={handleOnChangeResume}
-                                    name="resume"
-                                    types={["jpg", "png", "JPEG"]}
-                                    classes="input-drage-drop"
-                                />
+                                {/*<FileUploader*/}
+                                {/*    multiple={false}*/}
+                                {/*    handleChange={handleOnChangeResume}*/}
+                                {/*    name="resume"*/}
+                                {/*    types={["jpg", "png", "JPEG"]}*/}
+                                {/*    classes="input-drage-drop"*/}
+                                {/*/>*/}
                             </div>
                             <div className="col-5">
                                 <FlotingInput

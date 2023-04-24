@@ -6,6 +6,16 @@ import Draggable from 'react-draggable';
 import Filter from '../../components/Filter/Filter';
 import Avatar from "../../components/Avatar";
 import user from "../../assets/images/avatar.png";
+import FullCalendar from "@fullcalendar/react";
+import dayGridPlugin from '@fullcalendar/daygrid'
+import timeGridPlugin from '@fullcalendar/timegrid'
+import resourceTimeGridPlugin from '@fullcalendar/resource-timegrid'
+import "@fullcalendar/core/main.css";
+import "@fullcalendar/daygrid/main.css";
+import "@fullcalendar/timegrid/main.css";
+const events = [
+    { title: 'Meeting', start: new Date() }
+]
 
 export default function Calender() {
 
@@ -32,7 +42,15 @@ export default function Calender() {
     const handleStop = () => {
 
     }
-
+// a custom render function
+    function renderEventContent(eventInfo) {
+        return (
+            <>
+                <b>{eventInfo.timeText}</b>
+                <i>{eventInfo.event.title}</i>
+            </>
+        )
+    }
 
     return (
         <div className='position-relative'>
@@ -46,26 +64,19 @@ export default function Calender() {
                 addNew={true}
                 pasignation={true}
             />
+            <div style={{height: '50px'}}></div>
+            <div className="card card-default">
+                <div className="card-body">
+            <FullCalendar
+                plugins={[dayGridPlugin,timeGridPlugin,resourceTimeGridPlugin]}
+                defaultView='resourceTimeGridDay'
+                weekends={false}
+                events={events}
+                eventContent={renderEventContent}
+                schedulerLicenseKey={"0255236413-fcs-1560176287"}
 
-            <div className='card card-default my-3'>
-                <div class="card-header d-flex flex-nowrap">
-
-                    <div class="d-flex">
-                        <div class="flex-shrink-0">
-                            <Avatar src={user} circle={true} className="avatar-md rounded" />
-                        </div>
-                        <div class="flex-grow-1 ms-3">
-
-                        </div>
-                    </div>
-                    <div>
-                        <button class="btn btn-primary" onClick={modalToggle2}>Create Appointment</button>
-                    </div>
+            />
                 </div>
-                <div class="card-body">
-
-                </div>
-
             </div>
 
             <Draggable
